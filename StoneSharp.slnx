@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/StoneSharp/StoneSharp.csproj" />
+  </Folder>
+</Solution>
