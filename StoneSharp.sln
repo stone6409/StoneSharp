@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37012.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoneSharp", "src\StoneSharp\StoneSharp.csproj", "{53870454-D063-BAA6-0E97-873E6E972264}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{53870454-D063-BAA6-0E97-873E6E972264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53870454-D063-BAA6-0E97-873E6E972264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53870454-D063-BAA6-0E97-873E6E972264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53870454-D063-BAA6-0E97-873E6E972264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{53870454-D063-BAA6-0E97-873E6E972264} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B135BB3-0A94-4F2B-92D4-F439227D5A87}
+	EndGlobalSection
+EndGlobal
