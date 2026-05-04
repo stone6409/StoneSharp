@@ -2,5 +2,6 @@
   <Folder Name="/src/">
     <Project Path="src/StoneSharp.Core/StoneSharp.Core.csproj" Id="d24db506-c732-4a6a-a9db-ba53df3c3600" />
     <Project Path="src/StoneSharp/StoneSharp.csproj" />
+    <Project Path="StoneSharp.CodeProcessing/StoneSharp.CodeProcessing.csproj" Id="7c461b43-d521-4419-aed9-efd139765511" />
   </Folder>
 </Solution>
