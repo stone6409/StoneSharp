@@ -7,7 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\StoneSharp.CodeProcessing\StoneSharp.CodeProcessing.csproj" />
+    <PackageReference Include="System.Management" Version="10.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+     <ProjectReference Include="..\..\..\Fork\SK-dotnet_lite\dotnet\src\Connectors\Connectors.OpenAI\Connectors.OpenAI.csproj" />
+	  <ProjectReference Include="..\..\..\Fork\SK-dotnet_lite\dotnet\src\SemanticKernel.Core\SemanticKernel.Core.csproj" />
+	  <ProjectReference Include="..\StoneSharp.CodeProcessing\StoneSharp.CodeProcessing.csproj" />
   </ItemGroup>
 
 </Project>

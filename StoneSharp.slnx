@@ -1,7 +1,13 @@
 <Solution>
   <Folder Name="/src/">
+    <Project Path="src/StoneSharp.CodeProcessing/StoneSharp.CodeProcessing.csproj" />
     <Project Path="src/StoneSharp.Core/StoneSharp.Core.csproj" Id="d24db506-c732-4a6a-a9db-ba53df3c3600" />
     <Project Path="src/StoneSharp/StoneSharp.csproj" />
-    <Project Path="StoneSharp.CodeProcessing/StoneSharp.CodeProcessing.csproj" Id="7c461b43-d521-4419-aed9-efd139765511" />
+  </Folder>
+  <Folder Name="/src_ref/" />
+  <Folder Name="/src_ref/semantic-kernel/">
+    <Project Path="../Fork/SK-dotnet_lite/dotnet/src/Connectors/Connectors.OpenAI/Connectors.OpenAI.csproj" />
+    <Project Path="../Fork/SK-dotnet_lite/dotnet/src/SemanticKernel.Abstractions/SemanticKernel.Abstractions.csproj" />
+    <Project Path="../Fork/SK-dotnet_lite/dotnet/src/SemanticKernel.Core/SemanticKernel.Core.csproj" />
   </Folder>
 </Solution>
