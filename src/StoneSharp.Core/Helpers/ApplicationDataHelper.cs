@@ -5,21 +5,21 @@ namespace StoneSharp.Core.Helpers
 {
     public static class ApplicationDataHelper
     {
-        private static string? _customMyAgentFolder;
+        private static string? _customAgentFolder;
 
-        public static string MyAgentFolder
+        public static string CustomAgentFolder
         {
             get
             {
-                return _customMyAgentFolder;
+                return _customAgentFolder;
             }
             set
             {
-                _customMyAgentFolder = value;
+                _customAgentFolder = value;
             }
         }
 
-        public static string GetMyAgentFolder()
+        public static string GetAgentFolder()
         {
             // 使用AgentFileFinder获取.agent文件夹路径
             string agentFolderPath = AgentFileFinder.FindDotAgentFolderPath();
@@ -30,9 +30,9 @@ namespace StoneSharp.Core.Helpers
             }
 
             // 回退到默认的MyAgentFolder
-            if (!string.IsNullOrEmpty(_customMyAgentFolder) && Directory.Exists(MyAgentFolder))
+            if (!string.IsNullOrEmpty(CustomAgentFolder) && Directory.Exists(CustomAgentFolder))
             {
-                return MyAgentFolder;
+                return CustomAgentFolder;
             }
 
             agentFolderPath = Path.Combine(GetApplicationDataFolder(), ".agent");
@@ -53,7 +53,7 @@ namespace StoneSharp.Core.Helpers
         public static string GetAgentSkillsFolder()
         {
             // 首先尝试从.agent文件夹中获取skills文件夹
-            string agentFolderPath = GetMyAgentFolder();
+            string agentFolderPath = GetAgentFolder();
             string skillsFolderPath = Path.Combine(agentFolderPath, "skills");
             FilePathUtility.EnsureDirectoryExists(skillsFolderPath);
 
@@ -62,7 +62,7 @@ namespace StoneSharp.Core.Helpers
 
         public static string GetAgentPromptsFolder()
         {
-            string agentFolderPath = GetMyAgentFolder();
+            string agentFolderPath = GetAgentFolder();
             string promptsFolderPath = Path.Combine(agentFolderPath, "prompts");
             FilePathUtility.EnsureDirectoryExists(promptsFolderPath);
 
@@ -71,7 +71,7 @@ namespace StoneSharp.Core.Helpers
 
         public static string GetAgentRulesFolder()
         {
-            string agentFolderPath = GetMyAgentFolder();
+            string agentFolderPath = GetAgentFolder();
             string rulesFolderPath = Path.Combine(agentFolderPath, "rules");
             FilePathUtility.EnsureDirectoryExists(rulesFolderPath);
 
